@@ -1,0 +1,21 @@
+{
+    "header": {
+        "support": "Destek",
+        "distribute": "Yayınla",
+        "signin": "Giriş Yap"
+    },
+    "nexus_nav": {
+        "play": "Oyna",
+        "discover": "Keşfet",
+        "create": "Oluştur"
+    },
+    "distribute_nav": {
+        "distribute_nexus": "NexusPlay'de Yayınla",
+        "forum": "Geliştirici forumları",
+        "docs": "Dokümantasyon",
+        "learning": "Öğrenme"
+    },
+    "footer": {
+        
+    }
+}

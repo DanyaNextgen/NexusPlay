@@ -1,0 +1,21 @@
+{
+    "header": {
+        "support": "Soporte",
+        "distribute": "Distribuir",
+        "signin": "Iniciar sesión"
+    },
+    "nexus_nav": {
+        "play": "Jugar",
+        "discover": "Descubrir",
+        "create": "Crear"
+    },
+    "distribute_nav": {
+        "distribute_nexus": "Distribuir en NexusPlay",
+        "forum": "Foros de desarrolladores",
+        "docs": "Documentación",
+        "learning": "Aprendizaje"
+    },
+    "footer": {
+        
+    }
+}

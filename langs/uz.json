@@ -1,0 +1,21 @@
+{
+    "header": {
+        "support": "Yordam",
+        "distribute": "Tarqatish",
+        "signin": "Kirish"
+    },
+    "nexus_nav": {
+        "play": "O‘ynash",
+        "discover": "Kashf etish",
+        "create": "Yaratish"
+    },
+    "distribute_nav": {
+        "distribute_nexus": "NexusPlay’da tarqatish",
+        "forum": "Dasturchilar forumi",
+        "docs": "Hujjatlar",
+        "learning": "O‘rganish"
+    },
+    "footer": {
+        
+    }
+}

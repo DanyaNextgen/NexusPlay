@@ -1,0 +1,22 @@
+{
+    "header": {
+      "support": "Поддержка",
+      "distribute": "Публикация",
+      "signin": "Войти"
+    },
+    "nexus_nav": {
+      "play": "Играть",
+      "discover": "Обзор",
+      "create": "Создать"
+    },
+    "distribute_nav": {
+      "distribute_nexus": "Публиковать на NexusPlay",
+      "forum": "Форумы разработчиков",
+      "docs": "Документация",
+      "learning": "Обучение"
+    },
+    "footer": {
+
+    }
+}
+  
