@@ -1,22 +1,76 @@
 {
-    "header": {
-      "support": "Поддержка",
-      "distribute": "Публикация",
-      "signin": "Войти"
-    },
-    "nexus_nav": {
-      "play": "Играть",
-      "discover": "Обзор",
-      "create": "Создать"
-    },
-    "distribute_nav": {
-      "distribute_nexus": "Публиковать на NexusPlay",
-      "forum": "Форумы разработчиков",
-      "docs": "Документация",
-      "learning": "Обучение"
-    },
-    "footer": {
-
-    }
+	"header": {
+		"support": "Поддержка",
+		"distribute": "Публикация",
+		"language": "Язык",
+		"back": "Назад",
+		"menu": "Меню",
+		"signin": "Войти",
+		"login": "Регистрация",
+		"signout": "Выйти",
+		"cart": "Корзина",
+		"wishlist": "Избранное",
+		"searchPlaceholder": "Поиск по магазину",
+		"discover": "Главное",
+		"browse": "Все игры",
+		"noResults": "Нет результатов для запроса"
+	},
+	"nexus_nav": {
+		"play": "Играть",
+		"discover": "Обзор",
+		"create": "Создать"
+	},
+	"distribute_nav": {
+		"distribute_nexus": "Публиковать на NexusPlay",
+		"forum": "Форумы разработчиков",
+		"docs": "Документация",
+		"learning": "Обучение"
+	},
+	"footer": {
+		"games": "Игры",
+		"marketplaces": "Маркетплейсы",
+		"tools": "Инструменты",
+		"onlineServices": "Онлайн‑сервисы",
+		"company": "Компания",
+		"resources": "Ресурсы",
+		"backToTop": "Наверх",
+		"fortnite": "Fortnite",
+		"fallGuys": "Fall Guys",
+		"rocketLeague": "Rocket League",
+		"unrealTournament": "Unreal Tournament",
+		"infinityBlade": "Infinity Blade",
+		"shadowComplex": "Shadow Complex",
+		"roboRecall": "Robo Recall",
+		"nexusPlayStore": "NexusPlay Store",
+		"fab": "Fab",
+		"sketchfab": "Sketchfab",
+		"artStation": "ArtStation",
+		"storeRefundPolicy": "Политика возврата",
+		"storeEula": "Лицензия Store",
+		"unrealEngine": "Unreal Engine",
+		"uefn": "UEFN",
+		"metahuman": "MetaHuman",
+		"twinmotion": "Twinmotion",
+		"megascans": "Megascans",
+		"realityScan": "RealityScan",
+		"radGameTools": "RAD Game Tools",
+		"nexusOnlineServices": "Nexus Online Services",
+		"kidsWebServices": "Детские веб‑сервисы",
+		"servicesAgreement": "Соглашение об услугах",
+		"acceptableUsePolicy": "Политика допустимого использования",
+		"trustStatement": "Заявление о доверии",
+		"subprocessorList": "Список субподрядчиков",
+		"about": "О нас",
+		"newsroom": "Новости",
+		"careers": "Карьера",
+		"students": "Студенты",
+		"uxResearch": "UX‑исследования",
+		"devCommunity": "Сообщество разработчиков",
+		"megaGrants": "MegaGrants",
+		"supportACreator": "Поддержка автора",
+		"creatorAgreement": "Соглашение для авторов",
+		"distributeOnNexusPlay": "Распространить на NexusPlay",
+		"unrealBranding": "Руководство по бренду Unreal Engine",
+		"fanArtPolicy": "Политика фан‑арта"
+	}
 }
-  
