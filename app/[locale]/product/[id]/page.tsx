@@ -1,17 +1,20 @@
 import { notFound } from "next/navigation";
-import { getProductById } from "../../admin/dashboard/actions";
+import { getProductById } from "@/app/[locale]/admin/dashboard/actions";
 import ProductClient from "@/components/custom/ProductClient";
 
-type Props = {
+interface Params {
     locale: string;
-    params: { id: string };
-};
+    id: string;
+}
 
-export default async function ProductPage({ params }: Props) {
+interface PageProps {
+    params: Params;
+}
+
+export default async function ProductPage({ params }: PageProps) {
     const product = await getProductById(params.id);
     if (!product) return notFound();
 
     return <ProductClient product={product} />;
 }
-
 
