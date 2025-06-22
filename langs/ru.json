@@ -9,11 +9,24 @@
 		"login": "Регистрация",
 		"signout": "Выйти",
 		"cart": "Корзина",
-		"wishlist": "Избранное",
+		"wishlist": "Список желаемого",
+		"addToWishlist": "В список желаемого",
+		"addToCart": "Добавить в корзину",
+		"addedToCart": "Добавлено в корзину!",
+		"addedToWishlist": "Добавлено в список желаемого!",
+		"goToCart": "Перейти в корзину",
+		"goToWishlist": "Смотреть список желаемого",
+		"removeFromWishlist": "Удалить из списка желаемого",
+		"removedFromWishlist": "Удалено из списка желаемого",
+		"remove": "Удалить",
 		"searchPlaceholder": "Поиск по магазину",
 		"discover": "Главное",
 		"browse": "Все игры",
-		"noResults": "Нет результатов для запроса"
+		"noResults": "Нет результатов для запроса",
+		"free": "Бесплатно",
+		"discoverTitle": "Откройте для себя что-то новое",
+		"popular": "Популярные товары",
+		"recent": "Недавно добавленные"
 	},
 	"nexus_nav": {
 		"play": "Играть",
@@ -72,5 +85,40 @@
 		"distributeOnNexusPlay": "Распространить на NexusPlay",
 		"unrealBranding": "Руководство по бренду Unreal Engine",
 		"fanArtPolicy": "Политика фан‑арта"
+	},
+	"cart": {
+		"cart": "Корзина",
+		"emptyCart": "Корзина пуста.",
+		"order": "Оформить заказ (наличный расчёт)",
+		"orderTitle": "Оформление заказа",
+		"confirmOrder": "Подтвердить заказ",
+		"viewOrders": "Посмотреть историю заказов",
+		"orderSuccess": "Заказ оформлен",
+		"orderSuccessDescription": "Мы свяжемся с вами в ближайшее время.",
+		"total": "Итого",
+		"goToStore": "Выбирайте игры и приложения в магазине",
+		"wishlistEmpty": "В список желаемого пока что ничего не добавлено."
+	},
+	"browse": {
+		"filters": "Фильтры",
+		"resetFilters": "Сбросить фильтры",
+		"keywords": "Ключевые слова",
+		"price": "Цена",
+		"free": "Бесплатно",
+		"lt10": "До 10$",
+		"lt20": "До 20$",
+		"lt30": "До 30$",
+		"gt15": "15$ и выше",
+		"genresTitle": "Жанры",
+		"genres": {
+			"survival": "Выживание",
+			"open_world": "Открытый мир",
+			"adventure": "Приключения",
+			"fighting": "Файтинг",
+			"exploration": "Исследования",
+			"action": "Экшен",
+			"shooter": "Шутер",
+			"fantasy": "Фэнтези"
+		}
 	}
 }

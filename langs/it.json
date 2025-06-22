@@ -10,10 +10,22 @@
         "signout": "Esci",
         "cart": "Carrello",
         "wishlist": "Lista dei desideri",
+        "addToWishlist": "Nella lista desideri",
+        "addToCart": "Aggiungi al carrello",
+        "addedToCart": "Aggiunto al carrello!",
+        "addedToWishlist": "Aggiunto alla lista dei desideri!",
+        "goToCart": "Vai al carrello",
+        "goToWishlist": "Visualizza la lista dei desideri",
+        "removedFromWishlist": "Rimosso dalla lista dei desideri",
+        "remove": "Rimuovi",
         "searchPlaceholder": "Cerca nel negozio",
         "discover": "Scopri",
         "browse": "Tutti i giochi",
-        "noResults": "Nessun risultato trovato per la tua ricerca"
+        "noResults": "Nessun risultato trovato per la tua ricerca",
+        "free": "Gratuito",
+        "discoverTitle": "Scopri qualcosa di nuovo",
+        "popular": "Prodotti popolari",
+        "recent": "Aggiunti di recente"
     },
     "nexus_nav": {
         "play": "Gioca",
@@ -72,5 +84,40 @@
         "distributeOnNexusPlay": "Distribuisci su NexusPlay",
         "unrealBranding": "Linee guida del marchio Unreal Engine",
         "fanArtPolicy": "Politica fan‑art"
+    },
+    "cart": {
+        "cart": "Carrello",
+        "emptyCart": "Il tuo carrello è vuoto.",
+        "order": "Effettua l'ordine (contrassegno)",
+        "orderTitle": "Conferma ordine",
+        "confirmOrder": "Conferma ordine",
+        "viewOrders": "Vedi cronologia ordini",
+        "orderSuccess": "Ordine effettuato",
+        "orderSuccessDescription": "Ti contatteremo a breve.",
+        "total": "Totale",
+        "goToStore": "Sfoglia giochi e app nel negozio",
+        "wishlistEmpty": "Nessun elemento è stato ancora aggiunto alla tua lista dei desideri."
+    },
+    "browse": {
+        "filters": "Filtri",
+        "resetFilters": "Reimposta filtri",
+        "keywords": "Parole chiave",
+        "price": "Prezzo",
+        "free": "Gratis",
+        "lt10": "Sotto i 10€",
+        "lt20": "Sotto i 20€",
+        "lt30": "Sotto i 30€",
+        "gt15": "15€ o più",
+        "genresTitle": "Generi",
+        "genres": {
+            "survival": "Sopravvivenza",
+            "open_world": "Mondo aperto",
+            "adventure": "Avventura",
+            "fighting": "Combattimento",
+            "exploration": "Esplorazione",
+            "action": "Azione",
+            "shooter": "Sparatutto",
+            "fantasy": "Fantasia"
+        }
     }
 }

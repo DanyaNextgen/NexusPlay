@@ -10,10 +10,23 @@
         "signout": "Wyloguj się",
         "cart": "Koszyk",
         "wishlist": "Lista życzeń",
+        "addToWishlist": "Dodaj do listy życzeń",
+        "addedToCart": "Dodano do koszyka!",
+        "addedToWishlist": "Dodano do listy życzeń!",
+        "addToCart": "Dodaj do koszyka",
+        "goToCart": "Przejdź do koszyka",
+        "goToWishlist": "Zobacz listę życzeń",
+        "removeFromWishlist": "Usuń z listy życzeń",
+        "removedFromWishlist": "Usunięto z listy życzeń",
+        "remove": "Usuń",
         "searchPlaceholder": "Szukaj w sklepie",
         "discover": "Odkrywaj",
         "browse": "Wszystkie gry",
-        "noResults": "Brak wyników dla twojego zapytania"
+        "noResults": "Brak wyników dla twojego zapytania",
+        "free": "Darmowe",
+        "discoverTitle": "Odkryj coś nowego",
+        "popular": "Popularne produkty",
+        "recent": "Ostatnio dodane"
     },
     "nexus_nav": {
         "play": "Graj",
@@ -72,5 +85,40 @@
         "distributeOnNexusPlay": "Dystrybucja na NexusPlay",
         "unrealBranding": "Zasady brandingowe Unreal Engine",
         "fanArtPolicy": "Polityka fan‑artu"
+    },
+    "cart": {
+        "cart": "Koszyk",
+        "emptyCart": "Twój koszyk jest pusty.",
+        "order": "Złóż zamówienie (za pobraniem)",
+        "orderTitle": "Potwierdzenie zamówienia",
+        "confirmOrder": "Potwierdź zamówienie",
+        "viewOrders": "Zobacz historię zamówień",
+        "orderSuccess": "Zamówienie złożone",
+        "orderSuccessDescription": "Skontaktujemy się z Tobą wkrótce.",
+        "total": "Razem",
+        "goToStore": "Przeglądaj gry i aplikacje w sklepie",
+        "wishlistEmpty": "Jeszcze nic nie dodano do listy życzeń."
+    },
+    "browse": {
+        "filters": "Filtry",
+        "resetFilters": "Zresetuj filtry",
+        "keywords": "Słowa kluczowe",
+        "price": "Cena",
+        "free": "Darmowe",
+        "lt10": "Poniżej 10 zł",
+        "lt20": "Poniżej 20 zł",
+        "lt30": "Poniżej 30 zł",
+        "gt15": "15 zł lub więcej",
+        "genresTitle": "Gatunki",
+        "genres": {
+            "survival": "Przetrwanie",
+            "open_world": "Otwarty świat",
+            "adventure": "Przygoda",
+            "fighting": "Bijatyka",
+            "exploration": "Eksploracja",
+            "action": "Akcja",
+            "shooter": "Strzelanka",
+            "fantasy": "Fantastyka"
+        }
     }
 }

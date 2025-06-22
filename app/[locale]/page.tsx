@@ -1,31 +1,27 @@
-import { getProducts } from "@/lib/actions/getProducts";
 import SmartSearch from "@/components/custom/SmartSearch";
-import { getLocale } from "next-intl/server"; 
-
-// export default async function HomePage() {
-// 	const lang = await getLocale();
-// 	const products = await getProducts(lang);
-
-// 	return (
-// 		<div className="max-w-[1200px] mx-auto px-4">
-// 			<SmartSearch products={products} />
-// 		</div>
-// 	);
-// }
+import ProductSection from "@/components/custom/ProductSection";
+import { getProducts } from "./admin/dashboard/actions";
 
 export default async function HomePage() {
-	const lang = await getLocale();
-	const products = await getProducts(lang);
+	const products = await getProducts();
+
+	const chunkSize = 10;
+	const first = products.slice(0, chunkSize);
+	const second = products.slice(chunkSize, chunkSize * 2);
+	const third = products.slice(chunkSize * 2, chunkSize * 3);
 
 	return (
 		<>
 			<SmartSearch products={products} />
-			<div className="max-w-[1200px] mx-auto px-4 py-20 space-y-10">
-				{Array.from({ length: 50 }).map((_, i) => (
-					<p key={i} className="text-white">Контент {i + 1}</p>
-				))}
+
+			<div className="max-w-[1200px] mx-auto space-y-10">
+				<ProductSection titleKey="discoverTitle" products={first}/>
+				<ProductSection titleKey="popular" products={second} />
+				<ProductSection titleKey="recent" products={third} />
 			</div>
 		</>
 	);
 }
+
+
 

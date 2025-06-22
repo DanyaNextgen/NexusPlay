@@ -10,10 +10,23 @@
         "signout": "Çıkış yap",
         "cart": "Sepet",
         "wishlist": "İstek listesi",
+        "addToWishlist": "İstek listesine ekle",
+        "addToCart": "Sepete ekle",
+        "addedToCart": "Sepete eklendi!",
+        "addedToWishlist": "İstek listesine eklendi!",
+        "goToCart": "Sepete git",
+        "goToWishlist": "İstek listesine bak",
+        "removeFromWishlist": "İstek listesinden kaldır",
+        "removedFromWishlist": "İstek listesinden kaldırıldı",
+        "remove": "Kaldır",
         "searchPlaceholder": "Mağazada ara",
         "discover": "Keşfet",
         "browse": "Tüm oyunlar",
-        "noResults": "Sorgunuz için sonuç bulunamadı"
+        "noResults": "Sorgunuz için sonuç bulunamadı",
+        "free": "Ücretsiz",
+        "discoverTitle": "Yeni bir şey keşfedin",
+        "popular": "Popüler ürünler",
+        "recent": "Yeni eklenenler"
     },
     "nexus_nav": {
         "play": "Oyna",
@@ -72,5 +85,40 @@
         "distributeOnNexusPlay": "NexusPlay’da Dağıt",
         "unrealBranding": "Unreal Engine Marka Kılavuzu",
         "fanArtPolicy": "Fan Art Politikası"
+    },
+    "cart": {
+        "cart": "Sepet",
+        "emptyCart": "Sepetiniz boş.",
+        "order": "Sipariş ver (kapıda ödeme)",
+        "orderTitle": "Sipariş onayı",
+        "confirmOrder": "Siparişi onayla",
+        "viewOrders": "Sipariş geçmişini görüntüle",
+        "orderSuccess": "Sipariş verildi",
+        "orderSuccessDescription": "Yakında sizinle iletişime geçeceğiz.",
+        "total": "Toplam",
+        "goToStore": "Mağazada oyunları ve uygulamaları keşfedin",
+        "wishlistEmpty": "İstek listenize henüz bir şey eklenmedi."
+    },
+    "browse": {
+        "filters": "Filtreler",
+        "resetFilters": "Filtreleri sıfırla",
+        "keywords": "Anahtar kelimeler",
+        "price": "Fiyat",
+        "free": "Ücretsiz",
+        "lt10": "10₺ altı",
+        "lt20": "20₺ altı",
+        "lt30": "30₺ altı",
+        "gt15": "15₺ ve üzeri",
+        "genresTitle": "Türler",
+        "genres": {
+            "survival": "Hayatta kalma",
+            "open_world": "Açık dünya",
+            "adventure": "Macera",
+            "fighting": "Dövüş",
+            "exploration": "Keşif",
+            "action": "Aksiyon",
+            "shooter": "Nişancı",
+            "fantasy": "Fantastik"
+        }
     }
 }

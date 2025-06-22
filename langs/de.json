@@ -10,10 +10,23 @@
 		"signout": "Abmelden",
 		"cart": "Warenkorb",
 		"wishlist": "Wunschliste",
+		"addToWishlist": "Zur Wunschliste",
+		"addToCart": "In den Warenkorb",
+		"addedToCart": "Zum Warenkorb hinzugefügt!",
+		"addedToWishlist": "Zur Wunschliste hinzugefügt!",
+		"goToCart": "Zum Warenkorb",
+		"goToWishlist": "Wunschliste ansehen",
+		"removeFromWishlist": "Entfernen aus Wunschliste",
+		"removedFromWishlist": "Aus der Wunschliste entfernt",
+		"remove": "Entfernen",
 		"searchPlaceholder": "Shop durchsuchen",
 		"discover": "Entdecken",
 		"browse": "Alle Spiele",
-		"noResults": "Keine Ergebnisse für Ihre Suche gefunden"
+		"noResults": "Keine Ergebnisse für Ihre Suche gefunden",
+		"free": "Kostenlos",
+		"discoverTitle": "Entdecken Sie etwas Neues",
+		"popular": "Beliebte Produkte",
+		"recent": "Kürzlich hinzugefügt"
 	},
 	"nexus_nav": {
 		"play": "Spielen",
@@ -72,5 +85,40 @@
 		"distributeOnNexusPlay": "Teilen auf NexusPlay",
 		"unrealBranding": "Unreal Engine Branding-Richtlinien",
 		"fanArtPolicy": "Fan-Art-Richtlinien"
+	},
+	"cart": {
+		"cart": "Warenkorb",
+		"emptyCart": "Dein Warenkorb ist leer.",
+		"order": "Bestellung aufgeben (Barzahlung bei Lieferung)",
+		"orderTitle": "Bestellbestätigung",
+		"confirmOrder": "Bestellung bestätigen",
+		"viewOrders": "Bestellverlauf anzeigen",
+		"orderSuccess": "Bestellung aufgegeben",
+		"orderSuccessDescription": "Wir werden dich in Kürze kontaktieren.",
+		"total": "Gesamt",
+		"goToStore": "Spiele und Apps im Store durchsuchen",
+		"wishlistEmpty": "Deine Wunschliste ist noch leer."
+	},
+	"browse": {
+		"filters": "Filter",
+		"resetFilters": "Filter zurücksetzen",
+		"keywords": "Schlüsselwörter",
+		"price": "Preis",
+		"free": "Kostenlos",
+		"lt10": "Unter 10€",
+		"lt20": "Unter 20€",
+		"lt30": "Unter 30€",
+		"gt15": "15€ und mehr",
+		"genresTitle": "Genres",
+		"genres": {
+			"survival": "Überleben",
+			"open_world": "Offene Welt",
+			"adventure": "Abenteuer",
+			"fighting": "Kampfspiel",
+			"exploration": "Erkundung",
+			"action": "Action",
+			"shooter": "Shooter",
+			"fantasy": "Fantasy"
+		}
 	}
 }

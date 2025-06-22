@@ -12,6 +12,12 @@ enum Role {
   ADMIN
 }
 
+enum UserStatus {
+  active
+  inactive
+  blocked
+}
+
 model User {
   id             String    @id @default(cuid())
   name           String?
@@ -21,10 +27,13 @@ model User {
   emailVerified  DateTime?
   role           Role      @default(USER)
   createdAt      DateTime  @default(now())
+  status         UserStatus @default(active)
 
   accounts       Account[]
   sessions       Session[]
   orders         Order[]
+  wishlistItems  WishlistItem[]  
+  cartItems      CartItem[]     
 }
 
 model Account {
@@ -63,41 +72,47 @@ model VerificationToken {
   @@unique([identifier, token])
 }
 
-model Category {
-  id       String     @id @default(cuid())
-  name     String     @unique
-  products Product[]
-}
-
 model Product {
-  id            String               @id @default(cuid())
-  price         Int
-  image         String
-  createdAt     DateTime             @default(now())
-  categoryId    String
-  category      Category             @relation(fields: [categoryId], references: [id])
-  translations  ProductTranslation[]
-  orderItems    OrderItem[]
-}
-
-model ProductTranslation {
-  id          String   @id @default(cuid())
-  product     Product  @relation(fields: [productId], references: [id])
-  productId   String
-  language    String
+  id          String     @id @default(cuid())
   name        String
   description String
+  price       Int
+  image       String
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  categories  Category[] @relation("ProductCategories")
+  orderItems  OrderItem[]
+  cartItems   CartItem[]       
+  wishlistItems WishlistItem[] 
 
-  @@unique([productId, language])
+  @@map("products")
 }
 
-model Order {
-  id        String       @id @default(cuid())
-  user      User         @relation(fields: [userId], references: [id])
+model Category {
+  id        String    @id @default(cuid())
+  name      String    @unique
+  products  Product[] @relation("ProductCategories")
+}
+
+model CartItem {
+  id        String   @id @default(cuid())
+  user      User     @relation(fields: [userId], references: [id])
   userId    String
-  status    String       @default("new")
-  items     OrderItem[]
-  createdAt DateTime     @default(now())
+  product   Product  @relation(fields: [productId], references: [id])
+  productId String
+  quantity  Int      @default(1)
+
+  @@unique([userId, productId])
+}
+
+model WishlistItem {
+  id        String   @id @default(cuid())
+  user      User     @relation(fields: [userId], references: [id])
+  userId    String
+  product   Product  @relation(fields: [productId], references: [id])
+  productId String
+
+  @@unique([userId, productId])
 }
 
 model OrderItem {
@@ -106,6 +121,20 @@ model OrderItem {
   orderId    String
   product    Product  @relation(fields: [productId], references: [id])
   productId  String
+  quantity   Int      @default(1)
+}
+
+model Order {
+  id         String       @id @default(cuid())
+  user       User         @relation(fields: [userId], references: [id])
+  userId     String
+  status     String       @default("new") 
+  items      OrderItem[]
+  createdAt  DateTime     @default(now())
+
+  fullName   String?
+  phone      String?
+  address    String?
 }
 
 

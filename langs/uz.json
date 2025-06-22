@@ -10,10 +10,23 @@
         "signout": "Chiqish",
         "cart": "Savat",
         "wishlist": "Istaklar ro'yxati",
+        "addToWishlist": "Xohishlar ro'yxatiga",
+        "addToCart": "Savatchaga qoʻshish",
+        "addedToCart": "Savatga qo‘shildi!",
+        "addedToWishlist": "Sevimlilarga qo‘shildi!",
+        "goToCart": "Savatga o‘tish",
+        "goToWishlist": "Xohlaganlar roʻyxatini koʻrish",
+        "removeFromWishlist": "Xohishlar roʻyxatidan olib tashlash",
+        "removedFromWishlist": "Istaklar roʻyxatidan olib tashlandi",
+        "remove": "Olib tashlash",
         "searchPlaceholder": "Do'kondan qidiring",
         "discover": "Asosiy",
         "browse": "Barcha o'yinlar",
-        "noResults": "Soʻrov bo‘yicha hech narsa topilmadi"
+        "noResults": "Soʻrov bo‘yicha hech narsa topilmadi",
+        "free": "Bepul",
+        "discoverTitle": "Yangi narsalarni kashf eting",
+        "popular": "Ommabop mahsulotlar",
+        "recent": "Yaqinda qo‘shilganlar"
     },
     "nexus_nav": {
         "play": "O‘ynash",
@@ -72,5 +85,50 @@
         "distributeOnNexusPlay": "NexusPlay’da tarqatish",
         "unrealBranding": "Unreal Engine brend boʻyicha ko‘rsatmalar",
         "fanArtPolicy": "Fan-art siyosati"
+    },
+    "cart": {
+        "cart": "Savat",
+        "emptyCart": "Savatingiz bo‘sh.",
+        "order": "Buyurtma berish (naqd to'lov)",
+        "orderTitle": "Buyurtma ma'lumotlari",
+        "confirmOrder": "Buyurtmani tasdiqlash",
+        "viewOrders": "Buyurtmalar tarixini ko‘rish",
+        "orderSuccess": "Buyurtma berildi",
+        "orderSuccessDescription": "Tez orada siz bilan bog'lanamiz.",
+        "total": "Jami",
+        "goToStore": "Do‘konda o‘yinlar va ilovalarni tanlang",
+        "wishlistEmpty": "Istaklar ro‘yxatiga hali hech narsa qo‘shilmadi."
+    },
+    "genres": {
+        "survival": "Omon qolish",
+        "open_world": "Ochiq dunyo",
+        "adventure": "Sarguzasht",
+        "fighting": "Jang",
+        "exploration": "Kashfiyot",
+        "action": "Harakat",
+        "shooter": "Otishma",
+        "fantasy": "Fantastika"
+    },
+    "browse": {
+        "filters": "Filtrlar",
+        "resetFilters": "Filtrlarni tozalash",
+        "keywords": "Kalit so'zlar",
+        "price": "Narx",
+        "free": "Bepul",
+        "lt10": "$10 gacha",
+        "lt20": "$20 gacha",
+        "lt30": "$30 gacha",
+        "gt15": "$15 va undan yuqori",
+        "genresTitle": "Janrlar",
+        "genres": {
+            "survival": "Omon qolish",
+            "open_world": "Ochiq dunyo",
+            "adventure": "Sarguzasht",
+            "fighting": "Jangovar",
+            "exploration": "Tadqiqot",
+            "action": "Harakat",
+            "shooter": "O‘q otuvchi",
+            "fantasy": "Fantastika"
+        }
     }
 }

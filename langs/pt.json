@@ -10,10 +10,23 @@
         "signout": "Sair",
         "cart": "Carrinho",
         "wishlist": "Lista de desejos",
+        "addToWishlist": "Adicionar à lista de desejos",
+        "addToCart": "Adicionar ao carrinho",
+        "addedToCart": "Adicionado ao carrinho!",
+        "addedToWishlist": "Adicionado à lista de desejos!",
+        "goToCart": "Ir para o carrinho",
+        "goToWishlist": "Ver lista de desejos",
+        "removeFromWishlist": "Remover da lista de desejos",
+        "removedFromWishlist": "Removido da lista de desejos",
+        "remove": "Remover",
         "searchPlaceholder": "Buscar na loja",
         "discover": "Descobrir",
         "browse": "Todos os jogos",
-        "noResults": "Nenhum resultado encontrado para sua busca"
+        "noResults": "Nenhum resultado encontrado para sua busca",
+        "free": "Grátis",
+        "discoverTitle": "Descubra algo novo",
+        "popular": "Produtos populares",
+        "recent": "Recentemente adicionados"
     },
     "nexus_nav": {
         "play": "Jogar",
@@ -72,5 +85,40 @@
         "distributeOnNexusPlay": "Distribuir no NexusPlay",
         "unrealBranding": "Diretrizes de marca Unreal Engine",
         "fanArtPolicy": "Política de fan‑art"
+    },
+    "cart": {
+        "cart": "Carrinho",
+        "emptyCart": "Seu carrinho está vazio.",
+        "order": "Fazer pedido (pagamento na entrega)",
+        "orderTitle": "Confirmação do pedido",
+        "confirmOrder": "Confirmar pedido",
+        "viewOrders": "Ver histórico de pedidos",
+        "orderSuccess": "Pedido feito",
+        "orderSuccessDescription": "Entraremos em contato em breve.",
+        "total": "Total",
+        "goToStore": "Navegue por jogos e aplicativos na loja",
+        "wishlistEmpty": "Nada foi adicionado à sua lista de desejos ainda."
+    },
+    "browse": {
+        "filters": "Filtros",
+        "resetFilters": "Redefinir filtros",
+        "keywords": "Palavras-chave",
+        "price": "Preço",
+        "free": "Grátis",
+        "lt10": "Menos de R$10",
+        "lt20": "Menos de R$20",
+        "lt30": "Menos de R$30",
+        "gt15": "R$15 ou mais",
+        "genresTitle": "Gêneros",
+        "genres": {
+            "survival": "Sobrevivência",
+            "open_world": "Mundo aberto",
+            "adventure": "Aventura",
+            "fighting": "Luta",
+            "exploration": "Exploração",
+            "action": "Ação",
+            "shooter": "Tiro",
+            "fantasy": "Fantasia"
+        }
     }
 }

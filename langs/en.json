@@ -10,10 +10,23 @@
         "signout": "Sign Out",
         "cart": "Cart",
         "wishlist": "Wishlist",
+        "addToWishlist": "Add to Wishlist",
+        "addToCart": "Add to Cart",
+        "addedToCart": "Added to cart!",
+        "addedToWishlist": "Added to wishlist!",
+        "goToCart": "Go to Cart",
+        "goToWishlist": "View Wishlist",
+        "removeFromWishlist": "Remove from wishlist",
+        "removedFromWishlist": "Removed from wishlist",
+        "remove": "Remove",
         "searchPlaceholder": "Search Store",
         "discover": "Discover",
         "browse": "Browse",
-        "noResults": "No results found for your query"
+        "noResults": "No results found for your query",
+        "free": "Free",
+        "discoverTitle": "Discover something new",
+        "popular": "Popular products",
+        "recent": "Recently added"
     },
     "nexus_nav": {
         "play": "Play",
@@ -72,5 +85,50 @@
         "distributeOnNexusPlay": "Distribute on NexusPlay",
         "unrealBranding": "Unreal Engine Branding Guidelines",
         "fanArtPolicy": "Fan Art Policy"
+    },
+    "cart": {
+        "cart": "Cart",
+        "emptyCart": "Your cart is empty.",
+        "order": "Place order (cash on delivery)",
+        "orderTitle": "Order Confirmation",
+        "confirmOrder": "Confirm order",
+        "viewOrders": "View order history",
+        "orderSuccess": "Order placed",
+        "orderSuccessDescription": "We will contact you shortly.",
+        "total": "Total",
+        "goToStore": "Browse games and apps in the store",
+        "wishlistEmpty": "Nothing has been added to your wishlist yet."
+    },
+    "genres": {
+        "survival": "Survival",
+        "open_world": "Open World",
+        "adventure": "Adventure",
+        "fighting": "Fighting",
+        "exploration": "Exploration",
+        "action": "Action",
+        "shooter": "Shooter",
+        "fantasy": "Fantasy"
+    },
+    "browse": {
+        "filters": "Filters",
+        "resetFilters": "Reset filters",
+        "keywords": "Keywords",
+        "price": "Price",
+        "free": "Free",
+        "lt10": "Under $10",
+        "lt20": "Under $20",
+        "lt30": "Under $30",
+        "gt15": "$15 and above",
+        "genresTitle": "Genres",
+        "genres": {
+            "survival": "Survival",
+            "open_world": "Open World",
+            "adventure": "Adventure",
+            "fighting": "Fighting",
+            "exploration": "Exploration",
+            "action": "Action",
+            "shooter": "Shooter",
+            "fantasy": "Fantasy"
+        }
     }
 }

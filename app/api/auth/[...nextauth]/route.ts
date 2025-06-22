@@ -6,6 +6,8 @@ import { PrismaAdapter } from "@auth/prisma-adapter";
 import prisma from "@/lib/prisma";
 import bcrypt from "bcryptjs";
 
+import type { JWT } from "next-auth/jwt";
+
 const authOptions: NextAuthOptions = {
     adapter: PrismaAdapter(prisma),
     providers: [
@@ -36,46 +38,46 @@ const authOptions: NextAuthOptions = {
                 return user;
             },
         }),
-
         GoogleProvider({
             clientId: process.env.GOOGLE_CLIENT_ID!,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
         }),
-
         GitHubProvider({
             clientId: process.env.GITHUB_CLIENT_ID!,
             clientSecret: process.env.GITHUB_CLIENT_SECRET!,
         }),
     ],
-    session: {
-        strategy: "jwt",
-    },
+
+    session: { strategy: "jwt" },
     secret: process.env.NEXTAUTH_SECRET,
+
     callbacks: {
+        async jwt({ token, user }) {
+            if (user) {
+                token.id = (user as any).id;
+                token.role = (user as any).role ?? "USER";
+            }
+            return token;
+        },
         async session({ token, session }) {
             return {
                 ...session,
                 user: {
                     ...session.user,
-                    id: token?.id as string,
-                    role: token.role as "USER" | "ADMIN",
+                    id: (token as JWT & { id: string }).id,
+                    role: (token as JWT & { role: "USER" | "ADMIN" }).role,
                 },
             };
         },
-        async jwt({ token, user }) {
-            if (user) {
-                token.id = user.id;
-                token.role = (user as any).role;
-            }
-            return token;
-        },
     },
+
     pages: {
         signIn: "/auth/login",
     },
+
     debug: true,
 };
 
 const handler = NextAuth(authOptions);
 export { handler as GET, handler as POST };
-
+export { authOptions };
