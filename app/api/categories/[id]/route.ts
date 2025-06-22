@@ -3,7 +3,7 @@ import prisma from "@/lib/prisma";
 
 export async function PUT(
     req: Request,
-    { params }: { params: { id: string } | Promise<{ id: string }> }
+    { params }: { params: Promise<{ id: string }> }  
 ) {
     const resolvedParams = await params;
     const data = await req.json();
@@ -18,7 +18,7 @@ export async function PUT(
 
 export async function DELETE(
     req: Request,
-    { params }: { params: { id: string } | Promise<{ id: string }> }
+    { params }: { params: Promise<{ id: string }> }  
 ) {
     const resolvedParams = await params;
 
@@ -28,3 +28,4 @@ export async function DELETE(
 
     return NextResponse.json({ success: true });
 }
+
