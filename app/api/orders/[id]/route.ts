@@ -1,9 +1,14 @@
-import { NextRequest } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
 
-export async function PUT(req: NextRequest, { params }: { params: { id: string } }) {
+export async function PUT(
+    req: NextRequest,
+    { params }: { params: Promise<{ id: string }> }
+) {
     try {
-        const { id } = params;
+        const resolvedParams = await params;
+        const { id } = resolvedParams;
+
         const body = await req.json();
         const { status } = body;
 
@@ -20,9 +25,10 @@ export async function PUT(req: NextRequest, { params }: { params: { id: string }
             },
         });
 
-        return Response.json(updated);
+        return NextResponse.json(updated);
     } catch (error) {
         console.error("Failed to update order:", error);
-        return Response.json({ error: "Failed to update order" }, { status: 500 });
+        return NextResponse.json({ error: "Failed to update order" }, { status: 500 });
     }
 }
+
