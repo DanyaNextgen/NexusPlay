@@ -3,6 +3,7 @@ import { getProductById } from "../../admin/dashboard/actions";
 import ProductClient from "@/components/custom/ProductClient";
 
 type Props = {
+    locale: string;
     params: { id: string };
 };
 
