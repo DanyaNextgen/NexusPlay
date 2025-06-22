@@ -1,6 +1,6 @@
+import authOptions from "@/app/api/auth/authOptions";
 import prisma from "@/lib/prisma";
 import { getServerSession } from "next-auth";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 
 export async function getWishlist() {
     const session = await getServerSession(authOptions);
