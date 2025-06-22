@@ -1,21 +1,30 @@
-import { NextResponse } from "next/server"
-import prisma from "@/lib/prisma"
+import { NextResponse } from "next/server";
+import prisma from "@/lib/prisma";
 
-export async function PUT(req: Request, { params }: { params: { id: string } }) {
-    const data = await req.json()
+export async function PUT(
+    req: Request,
+    { params }: { params: { id: string } | Promise<{ id: string }> }
+) {
+    const resolvedParams = await params;
+    const data = await req.json();
 
     const updated = await prisma.category.update({
-        where: { id: params.id },
+        where: { id: resolvedParams.id },
         data: { name: data.name },
-    })
+    });
 
-    return NextResponse.json(updated)
+    return NextResponse.json(updated);
 }
 
-export async function DELETE(_: Request, { params }: { params: { id: string } }) {
-    await prisma.category.delete({
-        where: { id: params.id },
-    })
+export async function DELETE(
+    req: Request,
+    { params }: { params: { id: string } | Promise<{ id: string }> }
+) {
+    const resolvedParams = await params;
 
-    return NextResponse.json({ success: true })
+    await prisma.category.delete({
+        where: { id: resolvedParams.id },
+    });
+
+    return NextResponse.json({ success: true });
 }
