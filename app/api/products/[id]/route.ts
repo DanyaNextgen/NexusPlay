@@ -1,8 +1,12 @@
-import { NextRequest } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
 
-export async function DELETE(req: NextRequest, { params }: { params: { id: string } }) {
-    const { id } = params;
+export async function DELETE(
+    req: NextRequest,
+    { params }: { params: Promise<{ id: string }> }
+) {
+    const resolvedParams = await params;
+    const { id } = resolvedParams;
 
     try {
         await prisma.product.delete({ where: { id } });
@@ -13,9 +17,12 @@ export async function DELETE(req: NextRequest, { params }: { params: { id: strin
     }
 }
 
-
-export async function PUT(req: NextRequest, { params }: { params: { id: string } }) {
-    const { id } = params;
+export async function PUT(
+    req: NextRequest,
+    { params }: { params: Promise<{ id: string }> }
+) {
+    const resolvedParams = await params;
+    const { id } = resolvedParams;
     const data = await req.json();
 
     try {
@@ -34,9 +41,10 @@ export async function PUT(req: NextRequest, { params }: { params: { id: string }
             },
         });
 
-        return Response.json(updated);
+        return NextResponse.json(updated);
     } catch (error) {
         console.error("Ошибка при обновлении продукта:", error);
         return new Response("Не удалось обновить продукт", { status: 500 });
     }
 }
+
