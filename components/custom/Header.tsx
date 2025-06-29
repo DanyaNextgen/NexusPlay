@@ -45,7 +45,7 @@ export const Header = () => {
 						<NavigationMenuList>
 							<NavigationMenuItem>
 								<NavigationMenuTrigger className="!bg-transparent !text-white !border-none hover:!bg-transparent data-[state=open]:!bg-transparent focus:!bg-transparent focus-visible:!ring-0 p-0 flex items-center">
-									<img src="./NexusPlay.png" alt="" className="w-[90px]" />
+									<img src="/NexusPlay.png" alt="" className="w-[90px]" />
 								</NavigationMenuTrigger>
 								<NavigationMenuContent className="bg-[#27272a]/100 backdrop-blur-md backdrop-saturate-150">
 									<ul className="grid grid-cols-2 w-[360px] px-4 py-3">
@@ -79,7 +79,7 @@ export const Header = () => {
 						</NavigationMenuList>
 					</NavigationMenu>
 					<Link href="/">
-						<img src="./Store.png" alt="" className="w-[90px]" />
+						<img src="/Store.png" alt="" className="w-[90px]" />
 					</Link>
 					<Link href="/" className="text-white font-semibold hover:text-[#a9a9aa] transition-colors duration-300">{t("support")}</Link>
 					<NavigationMenu>
@@ -147,11 +147,11 @@ export const Header = () => {
 
 			<div className="md:hidden relative z-50 flex items-center justify-between p-4">
 				{!menuOpen && (
-					<img src="./NexusPlay.png" alt="" className="w-[90px] cursor-pointer" />
+					<img src="/NexusPlay.png" alt="" className="w-[90px] cursor-pointer" />
 				)}
 
 				<Link href="/">
-					<img src="./Store.png" alt="" className="w-[90px]" />
+					<img src="/Store.png" alt="" className="w-[90px]" />
 				</Link>
 
 				<button
