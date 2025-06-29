@@ -2,6 +2,14 @@
 
 import { useState, useEffect, useRef } from "react";
 import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import {
+    DropdownMenu,
+    DropdownMenuTrigger,
+    DropdownMenuContent,
+    DropdownMenuItem,
+} from "@/components/ui/dropdown-menu";
+import { ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
@@ -68,8 +76,8 @@ export default function SmartSearch({ products }: Props) {
                 }`}
         >
             <div className="max-w-[1200px] mx-auto flex items-center justify-between gap-4 px-4 py-7">
-                <div className="flex items-center gap-5">
-                    <div className="relative w-full max-w-md">
+                <div className="flex items-center gap-5 w-full">
+                    <div className="relative w-full sm:max-w-[220px] md:max-w-[260px]">
                         <IoIosSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-[#a9a9aa] text-xl" />
                         <Input
                             placeholder={t("searchPlaceholder")}
@@ -78,22 +86,63 @@ export default function SmartSearch({ products }: Props) {
                             className="w-full pl-10 rounded-3xl bg-[#27272a] text-white placeholder:text-[#a9a9aa] border-none"
                         />
                     </div>
+
+
                     <div className="hidden md:flex gap-6 text-white font-medium text-sm whitespace-nowrap">
                         <Link
                             href="/"
-                            className={`cursor-pointer transition-colors ${pathname === "/" ? "text-white" : "text-[#a9a9aa] hover:text-white"
+                            className={`transition-colors ${pathname === "/" ? "text-white" : "text-[#a9a9aa] hover:text-white"
                                 }`}
                         >
                             {t("discover")}
                         </Link>
-
                         <Link
                             href="/browse"
-                            className={`cursor-pointer transition-colors ${pathname === "/browse" ? "text-white" : "text-[#a9a9aa] hover:text-white"
+                            className={`transition-colors ${pathname === "/browse"
+                                ? "text-white"
+                                : "text-[#a9a9aa] hover:text-white"
                                 }`}
                         >
                             {t("browse")}
                         </Link>
+                    </div>
+
+                    <div className="flex md:hidden">
+                        <DropdownMenu>
+                            <DropdownMenuTrigger asChild>
+                                <Button
+                                    variant="ghost"
+                                    className="text-white text-sm font-medium gap-1 px-2 py-1"
+                                >
+                                    {pathname === "/browse" ? t("browse") : t("discover")}
+                                    <ChevronDown className="w-4 h-4" />
+                                </Button>
+                            </DropdownMenuTrigger>
+                            <DropdownMenuContent className="w-40 bg-[#27272a] border border-[#3a3a3a] text-white" sideOffset={8}>
+                                <DropdownMenuItem asChild>
+                                    <Link
+                                        href="/"
+                                        className={`w-full px-2 py-1 ${pathname === "/"
+                                            ? "text-white font-semibold"
+                                            : "text-[#a9a9aa] hover:text-white"
+                                            }`}
+                                    >
+                                        {t("discover")}
+                                    </Link>
+                                </DropdownMenuItem>
+                                <DropdownMenuItem asChild>
+                                    <Link
+                                        href="/browse"
+                                        className={`w-full px-2 py-1 ${pathname === "/browse"
+                                            ? "text-white font-semibold"
+                                            : "text-[#a9a9aa] hover:text-white"
+                                            }`}
+                                    >
+                                        {t("browse")}
+                                    </Link>
+                                </DropdownMenuItem>
+                            </DropdownMenuContent>
+                        </DropdownMenu>
                     </div>
                 </div>
 
@@ -111,7 +160,6 @@ export default function SmartSearch({ products }: Props) {
                         >
                             {t("cart")}
                         </Link>
-
                         <Link
                             href="/wishlist"
                             className="md:hidden text-2xl text-[#a9a9aa] hover:text-white transition-colors"

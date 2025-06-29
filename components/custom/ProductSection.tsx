@@ -17,10 +17,10 @@ export default function ProductSection({
     titleKey: string;
     products: any[];
 }) {
-    const t = useTranslations("header")
+    const t = useTranslations("header");
 
     return (
-        <section className="space-y-4">
+        <section className="space-y-4 px-4 md:px-0">
             <Carousel>
                 <div className="flex items-center justify-between mb-3">
                     <h2 className="text-2xl font-bold text-white">{t(titleKey)}</h2>
@@ -49,5 +49,4 @@ export default function ProductSection({
         </section>
     );
 }
-
 
